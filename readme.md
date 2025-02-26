@@ -24,11 +24,38 @@
 To add the wallpapers to your setup:
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/Gurjaka/Nord-Wallpapers.git
-   ```
+```bash
+git clone https://github.com/Gurjaka/Nord-Wallpapers.git
+```
 
-2. Navigate to the wallpapers directory and choose your preferred wallpaper. 📂
+2. Use flakes:
+2.1 Add the following to your `flake.nix`:
+
+```nix
+inputs = {
+  nord-wallpapers.url = "github:Gurjaka/Nord-Wallpapers";
+  ...
+}
+```
+
+2.2 Then, symlink wallpapers to your preffered directory using Home Manager:
+
+```nix
+{
+  inputs, 
+  pkgs, 
+  ...
+}: {
+  home.file = {
+    "path/to/dir" = {
+      source = inputs.wallpapers.packages."${pkgs.system}".default;
+      recursive = true;
+    };
+  };
+}
+```
+
+Navigate to the wallpapers directory and choose your preferred wallpaper. 📂
 
 ## Usage 🔧
 
