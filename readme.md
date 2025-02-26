@@ -9,28 +9,32 @@
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/Gurjaka/Nord-Wallpapers?style=for-the-badge&labelColor=2e3440&color=5e81ac) ![GitHub last commit](https://img.shields.io/github/last-commit/Gurjaka/Nord-Wallpapers?style=for-the-badge&labelColor=2e3440&color=5e81ac) ![GitHub repo size](https://img.shields.io/github/repo-size/Gurjaka/Nord-Wallpapers?style=for-the-badge&labelColor=2e3440&color=5e81ac)
 
-### <samp>A collection of wallpapers inspired by the Nord color palette, designed for use with various desktop setups and environments. These wallpapers offer a minimalist, clean, and visually pleasing aesthetic that aligns with the Nord theme. 🎨🌌</samp>
+### A serene collection of wallpapers inspired by the stunning Nord color palette, crafted to elevate your desktop experience with a minimalist and visually harmonious aesthetic. 🎨🌌
+
 </div>
 
-## Features ✨
+## Why You'll Love It ✨
 
-- High-quality wallpapers in various resolutions. 📸
-- Clean and minimalist design with colors from the Nord palette. 🌈
-- Compatible with a variety of desktop environments. 🖥️
-- Easy to use with a variety of configurations. ⚙️
+- **Stunning Quality**: High-resolution wallpapers, designed to look crisp on any screen. 📸
+- **Nord Aesthetic**: A clean and minimalist vibe, perfectly matching the iconic Nord color palette. 🌈
+- **Universal Compatibility**: Works beautifully with a variety of desktop environments. 🖥️
+- **Effortless Setup**: Easily integrates into your configuration with minimal effort. ⚙️
 
 ## Installation 🛠️
 
-To add the wallpapers to your setup:
+Bringing Nord Wallpapers to your setup is quick and easy. Follow these simple steps:
 
-1. Clone the repository:
+1. **Clone the repository**:
 ```bash
 git clone https://github.com/Gurjaka/Nord-Wallpapers.git
 ```
 
-2. Use flakes:
-2.1 Add the following to your `flake.nix`:
+### OR
 
+2. **Use [nix flakes](https://wiki.nixos.org/wiki/Flakes)**:
+
+2.1 Add the following to your `flake.nix` file:
+   
 ```nix
 inputs = {
   nord-wallpapers.url = "github:Gurjaka/Nord-Wallpapers";
@@ -38,7 +42,7 @@ inputs = {
 }
 ```
 
-2.2 Then, symlink wallpapers to your preffered directory using Home Manager:
+2.2 Then, symlink the wallpapers to your preferred directory using Home Manager:
 
 ```nix
 {
@@ -55,23 +59,24 @@ inputs = {
 }
 ```
 
-Navigate to the wallpapers directory and choose your preferred wallpaper. 📂
+Now, navigate to the wallpapers folder and choose the one that fits your mood! 📂
 
-## Usage 🔧
+## Setting It Up 🔧
 
-You can use these wallpapers on any desktop environment. Simply navigate to the downloaded wallpapers folder and set the image you prefer.
+These wallpapers can seamlessly fit into any desktop environment. Just navigate to your downloaded wallpapers and select your favorite.
 
-For example, to set a wallpaper using `feh` on Linux, run:
+For Linux users with `feh`, set your wallpaper with:
+
 ```bash
 feh --bg-scale /path/to/wallpaper.jpg
 ```
 
 ## Contribution 🤝
 
-Feel free to fork this repository and contribute by adding new wallpapers, improving existing ones, or submitting any suggestions. Open a pull request, and I will review it. 💻
+Got an idea or a wallpaper to share? Fork this repository, add your contributions, and open a pull request. I'll be happy to review it! 💻
 
 ## License 📜
 
-This repository is licensed under the [MIT License](LICENSE). 🖤
+This project is licensed under the [MIT License](LICENSE). 🖤
 
 ---
