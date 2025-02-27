@@ -22,6 +22,8 @@
       default = self.packages.${pkgs.system}.wallpapers;
 
       wallpapers = pkgs.stdenv.mkDerivation {
+        pname = "nord-wallpapers";
+        version = self.shortRev or "dev";
         src = ./.;
         installPhase = ''
           cp -r $src/wallpapers $out
